@@ -1,0 +1,18 @@
+.logo {
+    max-height: 180vh;
+    position: fixed; 
+    bottom: 0; 
+    left: -4em;
+}
+
+
+@media screen and (max-width: 850px) {
+    .logo {
+      visibility: hidden;
+      clear: both;
+      float: left;
+      margin: 10px auto 5px 20px;
+      width: 28%;
+      display: none;
+    }
+  }
