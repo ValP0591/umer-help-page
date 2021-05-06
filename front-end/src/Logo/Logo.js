@@ -1,9 +1,9 @@
 import React from "react";
 import "./Logo.css";
-import logo from "./logo1.png"; // Tell webpack this JS file uses this image
+import logo from "./logo5.png"; // Tell webpack this JS file uses this image
 
 function Logo() {
-  return (
+  return (  
     <div className="logo" >
       <img src={logo} alt="Logo" />
     </div>

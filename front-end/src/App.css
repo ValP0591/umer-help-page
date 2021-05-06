@@ -6,7 +6,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 80vh;
   display: flex;
   flex-direction: column;
@@ -14,15 +13,26 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  
 }
 
 .btn-danger {
   margin-right: 1em;
 }
 
+.btn-info {
+  margin-left: 1em;
+  font-weight: 200;
+}
+
+.btn-light {
+  font-weight: 200;
+}
+
 .App-header h1 {
   font-style: 'Oswald';
   font-size: 64px;
+  text-shadow: 10px 10px 10px 10px rgb(233, 228, 228);
 }
 
 .buttons {

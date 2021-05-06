@@ -11,9 +11,15 @@ function Header() {
             <nav className="nav nav-masthead justify-content-center">
               <a className="nav-link" href="#"><AboutUs /></a>
                 <p>&nbsp;|&nbsp;</p>
-              <a className="nav-link" href="http://umer.site">Магазин</a>
+              <a className="nav-link" href="http://umer.site">Перейти в магазин</a>
                 <p>&nbsp;|&nbsp;</p>
-              <a className="nav-link active" href="#">Ритуальный сертификат</a>
+              <a className="nav-link" href="#">Выбрать памятник</a>
+                <p>&nbsp;|&nbsp;</p>
+              <a className="nav-link" href="#">Ритуальный сертификат</a>
+                <p>&nbsp;|&nbsp;</p>
+              <a className="nav-link" href="#">Выбрать венок</a>
+                <p>&nbsp;|&nbsp;</p>
+              <a className="nav-link active" href="#">Заказать печать траурной ленты</a>
             </nav>
           </div>
       </header>

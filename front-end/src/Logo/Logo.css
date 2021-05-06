@@ -1,8 +1,9 @@
 .logo {
-    max-height: 180vh;
+    max-height: 85vh;
     position: fixed; 
     bottom: 0; 
-    left: -4em;
+    left: -8em;
+    
 }
 
 

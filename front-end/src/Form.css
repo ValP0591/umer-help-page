@@ -16,6 +16,6 @@
     margin: 1.5em 1em;
     box-shadow: 2px 3px 4px 1px rgb(107, 107, 107);
     text-transform: uppercase;
-    
+    align-content: flex-end;
 }
 
