@@ -13,6 +13,7 @@ class ContactForm extends Component {
     const name = document.getElementById("name").value;
     const phonenumber = document.getElementById("phonenumber").value;
     const message = document.getElementById("message").value;
+    const adress = document.getElementById("adress").value;
     axios({
       method: "POST",
       url: "http://localhost:3002/send",
@@ -20,14 +21,20 @@ class ContactForm extends Component {
         name: name,
         phonenumber: phonenumber,
         message: message,
+        adress: adress
       },
     }).then((response) => {
       if (response.data.msg === "success") {
-        alert("Message Sent.");
+        this.successForm;
+       // alert("The Message was sent.");
         this.resetForm();
       } else if (response.data.msg === "fail") {
       }
     });
+  }
+
+  successForm() {
+    document.getElementById("contact-form").innerHTML = "Спасибо за доверие, с вами свяжутся в течение двух минут"
   }
 
   resetForm() {
@@ -48,7 +55,7 @@ class ContactForm extends Component {
               type="text"
               className="form-control"
               id="name"
-              placeholder="Напишите ваше имя"
+              placeholder="Ваше имя*"
             />
           </div>
         </Form.Group>
@@ -60,18 +67,34 @@ class ContactForm extends Component {
             className="form-control"
             id="phonenumber"
             aria-describedby="phonenumber"
-            placeholder="Напишите ваш номер телефона для связи"
+            placeholder="Номер телефона для связи*"
+          />
+        </div>
+        </Form.Group>
+        <Form.Group>
+        <div className="form-group">
+         
+          <input
+            className="form-control"
+            rows="2"
+            id="adress"
+            placeholder="Укажите адрес для подъезда катафалка"
           />
         </div>
         </Form.Group>
         <Form.Group controlId="formBasicMessage">
-        <div className="form-group">
-         
-          <textarea className="form-control" rows="5" id="message" placeholder="В случае необходимости укажите дополнительную информацию"></textarea>
-        </div>
+          <div className="form-group">
+            <textarea 
+              className="form-control" 
+              rows="5" id="message" 
+              placeholder="По вашему желанию укажите дополнительные сведения - 
+              например фамилию имя отчество и дату рождения умершего, особенности его транспортировки,
+              этажность жилого дома и т.д.">
+            </textarea>
+          </div>
         </Form.Group>
-        <Button variant="warning" type="submit" className="btn btn-primary" size='lg'>
-          Вызвать агента
+        <Button variant="secondary" type="submit" className="btn btn-primary d-block ml-auto btn-block" size='lg'>
+          ОТПРАВИТЬ
         </Button>
       </Form>
     );

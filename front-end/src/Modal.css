@@ -11,3 +11,16 @@
 .modal-content {
     background-color: rgb(221, 221, 221);
 }
+
+.btn-warning:not(:disabled):not(.disabled).active, 
+.btn-warning:not(:disabled):not(.disabled):active, 
+.show>.btn-warning.dropdown-toggle {
+    background: #DD434F;                                            
+    background: -webkit-linear-gradient(to right, #DD434F, #EA604C);                                           
+    background: linear-gradient(to right, #DD434F, #EA604C);
+    color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 20px 10px rgb(255, 105, 105);
+    padding: .5em 5em;
+    font-size: 1em;
+    font-weight: 500;
+}
